@@ -53,6 +53,7 @@
                             $("#message").show();
                         },
                         error: function(err) {
+                        	alert(err.responseJSON.error);
                             errorMessage.text(err.responseJSON.error);
                             error.show();
                         }
